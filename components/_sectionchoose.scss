@@ -1,0 +1,62 @@
+@import '../abstract/variables';
+
+.choosespotify {
+  .containerchoose {
+    @include maxwidth;
+
+    padding: 6rem 3rem;
+    .titlecontainer {
+      font-family: $font;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    .cardschoose {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: top;
+      flex-wrap: wrap;
+      .cardchoose {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        img {
+          margin-bottom: 2.3rem;
+        }
+        .textchoose {
+        .titlecard {
+          font-size: 1.4rem;
+          font-family: $font;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: .5rem;
+        } 
+        p {
+          text-align: center;
+          font-size: 1rem;
+          color: $black;
+          max-width: 40ch;
+        }
+        }
+      }
+    }
+  }
+
+  .alertfree {
+    background-image: linear-gradient(to top, #6c04e4, #7601df, #7e00db, #8500d6, #8c00d2, #9100cf, #9601cd, #9b03ca, #a003c8, #a403c7, #a803c5, #ac04c4);
+    padding: 14rem 0rem;
+    .cellphonefree {
+      display: none;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      font-family: $font;
+      color: $white;
+      font-weight: 800;
+    }
+  }
+}

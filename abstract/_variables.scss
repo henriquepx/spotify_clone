@@ -1,0 +1,17 @@
+$font: 'Inter', sans-serif;
+
+$color-green: #19e68c;
+$white: #ffffff;
+$black: #000000;
+$gray: #808080;
+$color-gray-footer: #919496;
+$color-green-hoverbutton: #1ed760;
+$color-green-link: #0F9D58;
+$color-green-link-hover: #3de477;
+
+
+@mixin maxwidth {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+}

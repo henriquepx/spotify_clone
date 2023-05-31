@@ -1,0 +1,108 @@
+@import '../abstract/variables';
+
+footer {
+  background-color: $black;
+  padding: 6rem 2rem 6rem 2rem;
+  .containerfooter {
+    @include maxwidth;
+  .footertop {
+    display: flex;
+    justify-content: space-between;
+    .footer1 {
+      display: flex;
+      justify-content: flex-start;
+      gap: 60px;
+      img {
+        height: 45px;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        h3 {
+          font-family: $font;
+          font-size: .9rem;
+          color: $color-gray-footer;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+        nav {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li {
+              a {
+                color: $white;
+                font-family: $font;
+                &:hover {
+                  color: $color-green-hoverbutton;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .midiassociais {
+      margin-top: 2rem;
+      display: flex;
+      gap: 10px;
+      .midias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+        background-color: #242424;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        .fa-brands {
+          color: $white;
+          cursor: pointer;
+          &:hover {
+            color: $color-green-hoverbutton;
+          }
+        }
+      }
+    }
+  }
+  .footerbottom {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+    .bottomlinks {
+      nav {
+        ul {
+          display: flex;
+          gap: 15px;
+          li {
+            a {
+              font-size: .9rem;
+              color: $color-gray-footer;
+              &:hover {
+                color: $color-green-hoverbutton;
+              }
+            }
+          }
+        }
+      }
+    }
+    p {
+      color: $color-gray-footer;
+      font-size: .9rem;
+    }
+    .idioma {
+      position: absolute;
+      bottom: -2595px;
+      right: 432px;
+      cursor: pointer;
+      &:hover {
+        color: $color-green-hoverbutton;
+      }
+    }
+  }
+}
+}

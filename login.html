@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Spotify</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="loginheader">
+    <div class="containerheader">
+      <img src="./img/iconspotifylogin.png" alt="Logo da Spotify">
+    </div>
+  </header>
+
+  <main class="loginmaincontainer">
+    <p class="descloginlogin">To continue, log in to Spotify.</p>
+    <div class="facebook">
+      <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+      <p class="fontrede">Continue with Facebook</p>
+    </div>
+    <div class="apple">
+      <i class="fa-brands fa-apple fa-lg" style="color: #ffffff;"></i>
+      <p class="fontrede">Continue with Apple</p>
+    </div>
+    <div class="google">
+      <i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i>
+      <p class="fontrede">Continue with Google</p>
+    </div>
+    <a class="phonenumber" href="#">Continue with phone number</a>
+    <p class="or">OR</p>
+    <form>
+      <div>
+        <label>Email address or username</label>
+        <input type="email" name="password" placeholder="Emmail edress or username.">
+      </div>
+      <div>
+        <label>Password</label>
+        <div class="containerpassword">
+          <input type="password" id="senha" name="senha" placeholder="Password.">
+          <button type="button" id="mostrar-senha"><i id="eyeicon" class="far fa-eye fa-lg"></i></button>
+        </div>
+      </div>
+    </form>
+    <p class="forgotpassword">Forgot your password?</p>
+    <div class="painel">
+      <div class="rememberme">
+        <input type="checkbox" name="remember" id="remember">
+        <p>Remember me</p>
+      </div>
+      <a href="#">LOG IN</a>
+    </div>
+    <h1>Don't have an account?</h1>
+    <a class="signup" href="#">Sign up for Spotify</a>
+
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

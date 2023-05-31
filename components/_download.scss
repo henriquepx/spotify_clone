@@ -1,0 +1,209 @@
+@import '../abstract/variables';
+
+.maind {
+  .containermaind {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: $color-green;
+
+    padding: 8rem 0rem;
+    .computadorspotify {
+      position: relative;
+      width: 7%;
+      .imgd1 {
+        width: 100%;
+      }
+      .imgd2 {
+        position: absolute;
+        width: 25%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: showcircle .8s forwards;
+      }
+      .imgd3 {
+        position: absolute;
+        width: 8%;
+        top: 40%;
+        left: 46%;
+        transform: translate(-50%, -50%);
+        animation: showup 1.5s forwards;
+      }
+    }
+    h1 {
+      font-family: $font;
+      font-size: 3.5rem;
+      font-weight: 800;
+    }
+    p {
+      font-family: $font;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    a {
+      font-family: $font;
+      color: black;
+      font-weight: 600;
+      padding: 1.2rem 2.3rem;
+      border-radius: 50px;
+      background-color: $white;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .downloadbottom {
+    background-color: $white;
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    h1 {
+      font-family: $font;
+      font-size: 2.2rem;
+      font-weight: 800;
+    }
+    .downloadsways {
+      display: flex;
+      gap: 25px;
+      .imgdd2 {
+        height: 57px;
+        margin: -8px;
+      }
+      .imgdd1, .imgdd3 {
+        height: 40px;
+      }
+    }
+  }
+  .dispositivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 6.5rem 0rem;
+    background-color: #222326;
+    img {
+      width: 27%;
+    }
+    h1 {
+      font-size: $font;
+      color: $white;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+    .typesdispositivos {
+      display: flex;
+      gap: 15px;
+      p {
+        font-family: $font;
+        font-size: 1.1rem;
+        color: $white;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:not(:last-child)::after {
+          content: '';
+          background-color: $color-green;
+          display: inline-block;
+          position: relative;
+          bottom: 5px;
+          border-radius: 50px;
+          width: 5px;
+          height: 5px;
+          margin-left: 15px;
+        }
+      }
+      .green {
+        text-decoration: underline;
+        color: $color-green-hoverbutton;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 780px) {
+  .maind {
+    .containermaind {
+      padding: 8rem 0rem;
+      .computadorspotify {
+        width: 35%;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        max-width: 35ch;
+        text-align: center;
+      }
+      a {
+        padding: .9rem 2.3rem;
+      }
+    }
+    .downloadbottom {
+      padding: 5rem 1rem;
+      text-align: center;
+      h1 {
+        font-size: 1.8rem;
+      }
+      .downloadsways {
+        display: flex;
+        justify-content: center;
+        gap: 31px;
+        flex-wrap: wrap;
+      }
+    }
+    .dispositivos {
+      text-align: center;
+      padding: 6.5rem 1rem;
+      img {
+        width: 65%;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .typesdispositivos {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        p {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1300px) {
+  .maind {
+    .containermaind {
+      .computadorspotify {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@keyframes showcircle {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes showup {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, 15px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

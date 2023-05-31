@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up - Spotify</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="registerheader">
+    <div class="containerheader">
+      <img src="./img/iconspotifylogin.png" alt="Logo da Spotify">
+    </div>
+  </header>
+
+  <main class="loginmain">
+    <p class="desclogin">Sign up for free to start listening.</p>
+    <div class="facebookregister">
+      <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+      <p class="fontrede">Sign up with Facebook</p>
+    </div>
+    <div class="googleregister">
+      <i class="fa-brands fa-google fa-lg" style="color: #ffffff;"></i>
+      <p class="fontrede">Sign up with Google</p>
+    </div>
+    <p class="orregister">or</p>
+    <form>
+      <div>
+        <label>What's your email?</label>
+        <input type="email" id="emailInput" placeholder="Enter your email." name="email" onBlur="validateEmail()"
+          required>
+        <a class="registernumber">Use phone number instead.</a>
+      </div>
+      <div>
+        <label>Confirm your email</label>
+        <input type="email" id="emailConfirmInput" placeholder="Enter your email again." name="email"
+          onBlur="validateEmail()" required>
+      </div>
+      <div>
+        <label>Create a password</label>
+        <div class="containerpassword">
+          <input type="password" id="password" name="password" placeholder="Create a password."
+            onBlur="validatePassword()" required>
+        </div>
+      </div>
+      <div>
+        <label>What should we call you?</label>
+        <input type="text" id="user" name="user" placeholder="Enter a profile name." onBlur=" validateUsername()"
+          required>
+        <p>This appears on your profile.</p>
+      </div>
+      <div class="inputdate">
+        <label>What's your date of birth?</label>
+        <div class="date">
+          <div class="day">
+            <p>Day</p>
+            <input class="inpuregister" name="" id="day" type="text" placeholder="DD" onBlur="validateDay()" required>
+          </div>
+          <div class="month">
+            <p>Month</p>
+            <input class="inpuregister" id="monthregister" type="text" list="meses" placeholder="Month">
+            <datalist id="meses">
+              <option value="Janeiro">Janeiro</option>
+              <option value="Fevereiro">Fevereiro</option>
+              <option value="Março">Março</option>
+              <option value="Abril">Abril</option>
+              <option value="Maio">Maio</option>
+              <option value="Junho">Junho</option>
+              <option value="Julho">Julho</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Setembro">Setembro</option>
+              <option value="Outubro">Outubro</option>
+              <option value="Novembro">Novembro</option>
+              <option value="Dezembro">Dezembro</option>
+            </datalist>
+          </div>
+          <div class="year">
+            <p id="ano">Year</p>
+            <input class="inpuregister" type="text" placeholder="YYYY">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="gender">
+        <label>What's your gender?</label>
+        <div class="checkboxsex">
+          <div class=" radiobox male">
+            <input type="radio" name="gender">
+            <p>Male</p>
+          </div>
+          <div class=" radiobox female">
+            <input type="radio" name="gender">
+            <p>Female</p>
+          </div>
+          <div class="radiobox nonbinary">
+            <input type="radio" name="gender">
+            <p>Non-binary</p>
+          </div>
+          <div class="radiobox other">
+            <input type="radio" name="gender">
+            <p>Other</p>
+          </div>
+          <div class="radiobox notsay" name="gender">
+            <input type="radio" name="gender">
+            <p>Prefer not to say</p>
+          </div>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="promotion promotion1">
+          <input type="checkbox">
+          <label>I would prefer not to receive marketing messages from Spotify</label>
+        </div>
+        <div class="promotion promotion2">
+          <input type="checkbox">
+          <label>Share my registration data with Spotify's content providers for marketing purposes.</label>
+        </div>
+        <div class="promotion promotion3">
+          <input type="checkbox">
+          <label>I agree to the <span>Spotify Terms and Conditions of Use</span>.</lab>
+        </div>
+      </div>
+    </form>
+    <p class="politic">To learn more about how Spotify collects, uses, shares and protects your personal data, please
+      see <span>Spotify's Privacy Policy</span>.</p>
+    <a class="singupregister" href="#">Sign up</a>
+    <p class="haveanaccuont">Have an account? <a href="./login.html">Log in</a></p>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

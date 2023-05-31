@@ -1,0 +1,89 @@
+@import '../abstract/variables';
+
+@media (max-width: 780px) {
+  .maind {
+    .containermaind {
+      padding: 8rem 0rem;
+      .computadorspotify {
+        width: 35%;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        max-width: 35ch;
+        text-align: center;
+      }
+      a {
+        padding: .9rem 2.3rem;
+      }
+    }
+    .downloadbottom {
+      padding: 5rem 1rem;
+      text-align: center;
+      h1 {
+        font-size: 1.8rem;
+      }
+      .downloadsways {
+        display: flex;
+        justify-content: center;
+        gap: 31px;
+        flex-wrap: wrap;
+      }
+    }
+    .dispositivos {
+      text-align: center;
+      padding: 6.5rem 1rem;
+      img {
+        width: 65%;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .typesdispositivos {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        p {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .footerd {
+    padding: 4rem 0rem 2rem 0rem;
+    .containerfooter {
+    .footertop {
+      .footer1 {
+        gap: 35px;
+        img {
+          height: auto;
+          width: 100px;
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+        }
+      }
+    }
+    .footerbottom {
+      margin-top: 3rem;
+    }
+  }
+  }
+}
+
+
+@media (min-width: 1020px) and (max-width: 1300px) {
+  .maind {
+    .containermaind {
+      .computadorspotify {
+        width: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@import '../abstract/variables';
+
+@media (max-width: 800px) {
+  header {
+    .containerheader {
+      a {
+        img {
+          margin-left: 1rem;
+          width: 120px;
+        }
+      }
+      nav {
+        .nav-ul {
+          display: none;
+          li {
+            a {
+              color: $white;
+              &:nth-child(4) {
+                font-size: 2rem;
+              }
+            }
+            .subscribe::before {
+              display: none;
+            }
+          }
+        }
+        .nav-ul.active {
+          z-index: 10;
+          display: flex;
+          position: fixed;
+          color: $white;
+          background: $black;
+          top: 0;
+          right: 0;
+          flex-direction: column;
+          height: 850px;
+          gap: 5px;
+          text-align: left;
+          width: 60%;
+          animation: openingTab .3s ease-in-out;
+          .traco {
+            display: block;
+            margin: 2.6rem 3rem;
+          }
+          li {
+            margin-left: 3rem;
+            &:nth-child(1) {
+              margin-top: 2.2rem;
+            }
+            a {
+              font-size: 2.7rem;
+            }
+            .less {
+              font-size: 1.7rem;
+            }
+          }
+          .imgfundo {
+            position: relative;
+            top: 490px;
+            left: 40px;
+            display: block;
+            width: 100px;
+            cursor: pointer;
+          }
+        }
+        .hamburger {
+          display: block;
+          margin-right: 1rem;
+          z-index: 11;
+        }
+        .hamburger.active {
+          position: fixed;
+          right: 1%;
+          top: 2.4%;
+          .bar {
+            background-color: $white;
+          }
+          .bar:nth-child(2) {
+            opacity: 0;
+          }
+          .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+          }
+          .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-ul.active {
+    width: 100%;
+  }
+}
+
+@keyframes openingTab {
+  from {
+    right: -100%;
+    opacity: .7;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}

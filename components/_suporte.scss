@@ -1,0 +1,259 @@
+@import '../abstract/variables';
+
+.backgroundgreen {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  top: 0px;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(98.85deg,rgba(18,18,18,0.3) 0%, #121212 100%),linear-gradient(180deg,rgba(18,18,18,0) 0%, #121212 100%), #1ed760;
+}
+
+.headersupporte {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.mainsupport {
+  position: relative;
+  background-color: #121212;
+  padding-bottom: 4rem;
+  .containermainsupport {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 2.5rem 0rem;
+    h3 {
+      color: #a7a7a7;
+      font-family: $font;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-family: $font;
+      font-size: 5rem;
+      font-weight: 800;
+      color: $white;
+      max-width: 15ch;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #a7a7a7;
+      margin-bottom: 4rem;
+      font-family: $font;
+      font-weight: 700;
+      font-size: 1.5rem;
+      a {
+        color: $white;
+        font-family: $font;
+        font-weight: 800;
+        text-decoration: underline;
+        &:visited {
+          color: $white;
+        }
+      }
+    }
+    .searchsupport {
+      display: flex;
+      align-items: center;
+      padding: 0rem .8rem;
+      background-color: $white;
+      border-radius: 3px;
+      i {
+        margin-right: .7rem;
+      }
+      input {
+        width: 100%;
+        padding: .8rem 0rem;
+        outline: none;
+      }
+    }
+    .cardshelp {
+      margin-top: 2rem;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      .cardsupport {
+        width: 31.6%;
+        height: 92px;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+        background-color: rgb(175, 40, 150);
+        .imgsupport {
+          height: 64px;
+          position: absolute;
+          top: 25px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+          right: calc(100% - 64px + 19px);
+          left: calc(100% - 64px + 19px);
+          transform: rotate(25deg);
+         }
+         p {
+          display: block;
+          position: absolute;
+          padding: 1rem 0rem 0rem .8rem;
+          font-family: $font;
+          font-size: 1.1rem;
+          font-weight: bold;
+          color: $white;
+          max-width: 10ch;
+         }
+      }
+      .support2 {
+        background-color: #8c1932;
+       }
+       .support3 {
+        background-color: #b06239;
+       }
+       .support4 {
+        background-color: #006450;
+       }
+       .support5 {
+        background-color: #757575;
+       }
+       .support6 {
+        background-color: #537aa1;
+       }
+    }
+  }
+}
+
+.helpsupport {
+  background-color: #2a2a2a;
+  .containerhelpsuppor {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+
+  padding: 2.5rem 0rem;
+  h1 {
+    font-family: $font;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: $white;
+  }
+  .ajuda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1.5rem 0rem;
+    cursor: pointer;
+    &:hover p {
+      text-decoration: underline;
+    }
+    p {
+      align-items: center;
+      color: $white;
+      font-family: $font;
+      font-size: 1.15rem;
+    }
+  }
+}
+}
+
+.comunity {
+  text-align: center;
+  background-color: #121212;
+  padding: 7rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-family: $font;
+    font-weight: 800;
+    color: $white;
+    font-size: 3rem;
+    margin-bottom: 1.7rem;
+  }
+  p {
+    font-family: $font;
+    font-size: 1rem;
+    max-width: 70ch;
+    margin: 0 auto;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+  a {
+    padding: 1.3rem 3rem;
+    background-color: #1ed760;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-family: $font;
+    color: $black;
+    font-weight: 700;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 425px) {
+
+  .mainsupport {
+    .containermainsupport {
+      padding: 2.5rem 1.5rem;
+      h3 {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      .cardshelp {
+        .cardsupport {
+          width: 43%;
+        }
+      }
+    }
+  }
+
+  .helpsupport {
+    .containerhelpsuppor {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+
+  .comunity {
+    padding: 4rem .5rem;
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .mainsupport {
+    .containermainsupport {
+      .cardshelp {
+        .cardsupport {
+          width: 47%;
+        }
+      }
+    }
+  }
+
+  .helpsupport {
+    .containerhelpsuppor {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+
+  .comunity {
+    padding: 5rem 1rem;
+    h1 {
+      font-size: 1.8rem;
+    }
+    a {
+      padding: 1rem 2rem;
+    }
+  }
+}

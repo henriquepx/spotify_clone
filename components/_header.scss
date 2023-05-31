@@ -1,0 +1,78 @@
+@import '../abstract/variables';
+
+header {
+  background-color: $black;
+  .containerheader {
+    @include maxwidth;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .9rem 2rem;
+    a {
+      img {
+        width: 160px;
+      }
+    }
+    nav {
+      display: flex;
+      ul {
+        display: flex;
+        gap: 30px;
+        animation: textgoingleft .3s forwards;
+        .traco {
+          display: none;
+          width: 25px;
+          height: 2px;
+          background-color: $white;
+        }
+        li {
+          a {
+            color: $white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            &:hover {
+              color: rgb(6, 207, 6);
+            }
+          }
+          .subscribe::before {
+            content: '';
+            background-color: $white;
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            width: 1px;
+            height: 17px;
+            margin-right: 3rem;
+          }
+        }
+        .imgfundo {
+          display: none;
+          width: 160px;
+        }
+      }
+      .hamburger {
+        display: none;
+        .bar {
+          display: block;
+          width: 25px;
+          height: 3px;
+          margin: 5px auto;
+          transition: all .3s ease-in-out;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+@keyframes textgoingleft {
+  from {
+    opacity: 0;
+    transform: translate3d(60px, 0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
