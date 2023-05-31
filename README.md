@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./img/logo.png">
+  <img src="./img/iconspotifylogin.png">
 </h1>
 
 <p align="center"><a href="https://spotify-clone-henriqdev.netlify.app/index.html">Link para visualizar o projeto</a></p>
