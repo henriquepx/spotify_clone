@@ -1,12 +1,44 @@
-<h1 align="center">
-  <img src="./img/iconspotifylogin.png">
-</h1>
+# Spotify Website Clone
 
-<p align="center"><a href="https://spotify-clone-henriqdev.netlify.app/index.html">Link para visualizar o projeto</a></p>
+![Portfolio Logo](./img/iconspotifylogin.png)
 
 <br>
 
-# Clone do Site do Spotify
+**To view the project, click [here](https://spotify-clone-henriqdev.netlify.app/index.html).**
+
+## Project Description
+
+This project consists of a clone of the official Spotify website.
+
+The goal of this project is to replicate all pages of the Spotify website, ranging from the home page to the registration, login, premium, and download pages. Each page has been meticulously developed to ensure both visual fidelity and functionality in comparison to the original site.
+
+A major focus was to ensure responsiveness, enabling the cloned site to be accessed on various devices such as smartphones, tablets, and desktops. To achieve this responsiveness, fluid design techniques and media queries were employed, allowing the site to adapt gracefully to different screen sizes.
+
+Throughout the development of this project, I had the opportunity to refine my skills in HTML and CSS, exploring new CSS selectors and properties to recreate the intricate details and styles found on the original Spotify site.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Sass
+
+## Achieved Results
+
+By the conclusion of this project, I have gained a heightened proficiency in the utilized technologies and have embraced the best practices in web development. The experience of emulating a well-known website like Spotify has provided invaluable learning opportunities and allowed me to refine my skills in responsive design, advanced CSS selectors, animations, and positioning.
+
+The Spotify website clone developed within this project stands as a significant milestone in my journey as a developer, serving as a testament to my ability to recreate intricate projects and apply learned concepts within a real-world context.
+
+<br>
+<br>
+
+## **Português:**
+
+# Clone do Site do Spotify  
+
+<br>
+
+**Para visualizar o projeto, clique [aqui](https://spotify-clone-henriqdev.netlify.app/index.html).**
 
 Este projeto consiste em um clone do site oficial do Spotify.
 
